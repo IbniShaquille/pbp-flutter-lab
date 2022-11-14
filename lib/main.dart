@@ -1,6 +1,6 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
+import 'tambahBudget.dart';
+import 'dataBudget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -100,6 +100,33 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
+      drawer: Drawer(
+        child: Column(
+          children: [
+            // Menambahkan clickable menu
+            ListTile(
+              title: const Text('Tambah Budget'),
+              onTap: () {
+                // Route menu ke halaman utama
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => const tambahBudgetPage()),
+                );
+              },
+            ),
+            ListTile(
+              title: const Text('Data Budget'),
+              onTap: () {
+                // Route menu ke halaman form
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => dataBudgetPage()),
+                );
+              },
+            ),
+          ],
+        ),
+      ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
@@ -143,7 +170,7 @@ class _MyHomePageState extends State<MyHomePage> {
           FloatingActionButton(
             onPressed: _incrementCounter,
             child: const Icon(Icons.add),
-          )
+          ) 
         ]),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
