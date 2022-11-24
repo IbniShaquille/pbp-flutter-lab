@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'tambahBudget.dart';
-import 'main.dart';
+import 'myWatchList.dart';
+import '../main.dart';
 
 class dataBudgetPage extends StatefulWidget {
   var myBudget;
@@ -39,6 +40,16 @@ class _dataBudgetPageState extends State<dataBudgetPage> {
                 Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(builder: (context) => dataBudgetPage()),
+                );
+              },
+            ),
+            ListTile(
+              title: const Text('mywatchlist'),
+              onTap: () {
+                // Route menu ke halaman utama
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => const myWatchListPage()),
                 );
               },
             ),

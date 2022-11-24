@@ -63,3 +63,26 @@ Cara kerja dari Navigator adalah dengan menambahkan route ke stack. Navigator ak
 ## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 
 Dalam aplikasi ini, saya menambahkan drawer dan routing pages kedua halaman dengan `Navigator.pushReplacement`. pada halaman pertama, saya mengirim data dengan membuat kelas Budget dan menyimpannya dalam list agar dapat send data ke halaman kedua. Pada halaman kedua, saya menerima data dengan membuat kelas Budget dan menampilkan data yang diterima. 
+
+---
+
+---
+
+# **Tugas 8**
+
+## Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+
+Pengambilan data JSON tanpa membuat model terlebih dahulu dapat dilakukan dengan menggunakan fungsi `jsonDecode`. Pengambilan data JSON tanpa membuat model terlebih dahulu lebih baik daripada membuat model sebelum melakukan pengambilan data JSON karena pengambilan data JSON tanpa membuat model terlebih dahulu lebih mudah dan lebih cepat. 
+
+## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+
+Widget yang digunakan adalah MaterialApp, Scaffold, AppBar, Text, Center, Drawer, Form, ListTile, Column, FutureBuilder dan FloatingActionButton. 
+
+## Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+
+Mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter adalah dengan menggunakan fungsi `jsonDecode` untuk mengubah data json menjadi data yang dapat dibaca oleh flutter. Setelah itu, data yang telah diubah menjadi data yang dapat dibaca oleh flutter dapat ditampilkan pada flutter.
+
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+
+Dalam aplikasi ini, saya menambahkan drawer dan routing pages kedua halaman dengan `Navigator.pushReplacement`. pertama, saya membuat model untuk data json. Setelah itu, saya mengambil data json dengan menggunakan fungsi `jsonDecode`. Setelah itu, saya menampilkan data json yang telah diubah menjadi data yang dapat dibaca oleh flutter. Pada halaman details, saya mengirimkan data yang telah di fetch ke halaman details dengan menggunakan fungsi hamburger`. Pada halaman details, saya menerima data yang telah di fetch. Setelah itu, saya menampilkan data yang telah di fetch.
+

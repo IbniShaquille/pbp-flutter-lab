@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dataBudget.dart';
+import 'myWatchList.dart';
 
 // buat kelas budget
 class Budget {
@@ -121,6 +122,16 @@ class _tambahBudgetPageState extends State<tambahBudgetPage> {
                       builder: (context) =>  dataBudgetPage(
                           myBudget: listBudget,
                       )),
+                );
+              },
+            ),
+            ListTile(
+              title: const Text('mywatchlist'),
+              onTap: () {
+                // Route menu ke halaman utama
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => const myWatchListPage()),
                 );
               },
             ),
